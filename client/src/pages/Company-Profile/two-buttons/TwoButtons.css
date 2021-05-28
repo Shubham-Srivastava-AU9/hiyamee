@@ -1,0 +1,67 @@
+.two-buttons-div{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
+
+
+.button-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50%;
+  float: left;
+  font-size: 20px !important;
+  background-color: #3771FF;
+  color: white;
+  border-radius: 15px;
+  font-family: proxima-bold;
+  border-width: 0px;
+}
+
+.button-two {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50%;
+  background-color: rgb(31, 31, 31) !important;
+  font-size: 20px !important;
+  color: white;
+  border-radius: 15px;
+  font-family: proxima-bold;
+  
+  border-width: 0px;
+  
+}
+
+
+
+@media only screen and  (max-width: 436px) {
+
+  .button-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    float: left;
+    font-size: 15px !important;
+  }
+  
+  .button-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    background-color: rgb(31, 31, 31) !important;
+    font-size: 15px !important;
+    
+  }
+
+}
+

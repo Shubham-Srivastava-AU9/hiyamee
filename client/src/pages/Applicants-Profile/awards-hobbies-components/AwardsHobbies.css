@@ -1,0 +1,124 @@
+.awards-cert-col {
+    float: left;
+    width: 50%;
+    
+    
+    margin-top: 5%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .awards-cert-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+    
+  }
+
+  .awards-hobbies-heading {
+    font-family: proxima-bold !important;
+    color: black;
+  }
+
+  .awards-hobbies {
+      text-align: left;
+      margin-left: 5%;
+      margin-top: 5%;
+      font-family: proxima-bold;
+      color:#979797;
+      opacity: 1;
+  }
+
+  .hobbies-interest {
+      margin-top: 5%;
+  }
+
+  .hobbies-col {
+    float: left;
+    width: 50%;
+    
+    margin-top: 5%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .hobbies-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .social-account {
+      padding-bottom: 30px;
+  }
+  
+  .linkedin-social-btn {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 10px 20px 10px 20px;
+    border: 0;
+  }
+
+  .fa-icon {
+    padding-right: 20px;
+  }
+
+
+  @media screen and (max-width: 846px) {
+
+    .awards-hobbies-heading {
+        text-align: center;
+    }
+
+    .hobbies-interest {
+      margin-left: 0%;
+    }
+    
+    .hobbies-p {
+      text-align: center;
+    }
+
+    .linkedin-social-btn {
+      margin-left: 38%;
+
+    }
+  }
+
+
+  @media screen and (max-width: 656px) {
+    .awards-hobbies-heading {
+      text-align: center;
+  }
+
+  .hobbies-interest {
+    margin-left: 0%;
+  }
+  
+  .hobbies-p {
+    text-align: center;
+  }
+
+  .linkedin-social-btn {
+    margin-left: 30%;
+
+  }
+  .awards-cert-col {
+    float: none;
+    width: 100%;
+    
+    
+    margin-top: 5%;
+    
+  }
+  .hobbies-col {
+    float: none;
+    width: 100%;
+    
+    margin-top: 5%;
+    
+  }
+    
+  }

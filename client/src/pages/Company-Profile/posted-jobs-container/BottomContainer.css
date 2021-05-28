@@ -1,0 +1,251 @@
+.bottom-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 24px #00000029;
+  border-radius: 29px;
+  opacity: 1;
+}
+
+.bottom-container-heading {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-family: proxima-bold;
+}
+
+.job-card-p {
+  background-color: rgb(10, 172, 10);
+  border-radius: 15px;
+  width: 30%;
+  margin-left: 70px;
+  color: white;
+  font-size: 13px;
+}
+
+.bottom-container-jobcard-col {
+  float: left;
+  width: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+/* Clear floats after the columns */
+.bottom-container-jobcard-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom-container-txt-btm {
+    text-align: right;
+    margin-right: 100px;
+    margin-top: -30px;
+    color: #3771FF;
+    padding-bottom: 30px;
+    text-decoration:none !important;
+    font-family: proxima-bold;
+}
+
+
+@media only screen and  (max-width: 978px) {
+  .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+  
+  
+}
+
+
+@media only screen and  (max-width: 1434px) {
+  .bottom-container-jobcard-col {
+      float: left;
+      width: 35%;
+      padding-left: 20px;
+      margin-left: 10%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+}
+
+@media only screen and  (max-width: 1358px) {
+  .bottom-container-jobcard-col {
+      float: left;
+      width: 40%;
+      padding-left: 20px;
+      margin-left: 7%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+}
+
+@media only screen and  (max-width: 1202px) {
+  .bottom-container-jobcard-col {
+      float: left;
+      width: 42%;
+      padding-left: 20px;
+      margin-left: 5.5%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 1116px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 45%;
+      padding-left: 20px;
+      margin-left: 27%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+  .bottom-container-txt-btm {
+      text-align: center;
+      margin-right: 0px;
+      margin-top: -0px;
+      color: blue;
+      padding-bottom: 30px;
+      text-decoration:none !important;
+  }
+  
+}
+
+@media only screen and (max-width: 1072px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 55%;
+      padding-left: 20px;
+      margin-left: 23%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 876px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 65%;
+      padding-left: 20px;
+      margin-left: 17%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 75%;
+      padding-left: 20px;
+      margin-left: 12%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 85%;
+      padding-left: 20px;
+      margin-left: 7%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 95%;
+      padding-left: 20px;
+      margin-left: 2%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .bottom-container-jobcard-col {
+      float: none;
+      width: 95%;
+      padding-left: 20px;
+      margin-left: 2%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bottom-container-heading {
+      text-align: center;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media only screen and  (min-width: 1560px) and (max-width: 1921px) {
+  .bottom-container-jobcard-col {
+      float: left;
+      width: 31%;
+      padding-left: 20px;
+      margin-left: 2%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+  
+}
+
+@media only screen and  (min-width: 1736px) and (max-width: 1921px) {
+  .bottom-container-jobcard-col {
+      float: left;
+      width: 29%;
+      padding-left: 20px;
+      margin-left: 3.2%;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+  
+}

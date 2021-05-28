@@ -1,0 +1,154 @@
+main.auth{
+    background: rgb(229,229,229);
+    background: linear-gradient(90deg, rgba(229,229,229,1) 60%, rgba(255,255,255,1) 60%);
+    min-height: 100vh;
+    .trending_platforms_container{
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+     
+        .trending_platform_card{
+            text-align: center;
+            img{
+                width: 100%;
+            }
+            p{
+                color: #111111;
+                font-family: $proxima_reg;
+                font-size: 1rem;
+                &.count{
+                    color: $primary_blue;
+                }
+            }
+        }
+    }
+    .auth-image-content{
+        text-align: center;
+        img{
+            width: 200px;
+            margin-top:50px;
+            margin-bottom:25px;
+            &.logo-image{
+            margin-top:25px;
+            margin-bottom:25px;
+            width: 150px;
+            }
+        }
+        h3{
+            text-align: center;
+            font: normal normal 100 41px/50px $proxima_reg;
+            letter-spacing: 0.51px;
+            color: #272727;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+
+    .login-title-holder{
+        // border-bottom: 1px solid #DEDEDE;
+        width: max-content;
+        margin:auto;
+        margin-bottom: 25px;
+        ul.title{
+            margin-bottom: 0;
+            li{
+                display: inline-block;
+                padding-right: 25px;
+                &.active{
+                    a{
+                        font-weight: bold;
+                        color: $primary_blue;
+                        color: #3771FF;
+                    opacity: 1 !important;
+                        
+                        &:after{
+                            content: '';
+                            height: 2px;
+                            width: 150%;
+                            background: $primary_blue;
+                            display: block;
+                            margin: auto;
+                            margin-top: 12px;
+                        }
+                    }
+                }
+                a{
+                    font-family: $proxima_reg;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    letter-spacing: 0.63px;
+                    color: #3771FF;
+                    opacity: 0.4;
+                    &:after{
+                        content: '';
+                        height: 1px;
+                        width: 150%;
+                        background: #DEDEDE;
+                        display: block;
+                        margin: auto;
+                        margin-top: 12px;
+                    }
+                        &:hover{
+                            text-decoration: none;
+                        }
+                }
+            }
+        }
+    }
+
+
+    .login_form{
+        width: 90%;
+        display: block;
+        margin: auto;
+        label{
+            text-align: left;
+            font-family: $proxima_reg;
+            font-weight: normal;
+            font-size: 1rem;
+            letter-spacing: 0.44px;
+            color: #000000;
+            opacity: 1;
+        }
+        input{
+                background: #F5F6F8 0% 0% no-repeat padding-box;
+                border: 1px solid #DEDEDE;
+                border-radius: 4px;
+        }
+        p{
+                font-family: $proxima_reg;
+                font-size: 1rem;
+                letter-spacing: 0.44px;
+                color: #272727;
+            a{
+                font-family: $proxima_reg;
+                font-size: 1rem;
+                letter-spacing: 0.44px;
+                color: #272727;
+                text-decoration: none;
+            }
+            &.social-login{
+                a{
+                    margin-left: 25px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 12px;
+                    opacity: 1;
+                    padding: 5px 10px;
+                    span{
+                        background: rgba(55, 112, 255, 0.2) ;
+                        border-radius: 10px;
+                        color: #0C2864;
+                        padding: 4px 6px;
+                    }
+                }
+            }
+        }
+        .btn-login{
+            padding-right: 25px;
+            padding-left: 25px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+    }
+}

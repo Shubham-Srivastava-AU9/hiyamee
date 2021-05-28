@@ -1,0 +1,87 @@
+footer{
+    background:#272727 ;
+    color: #FFFFFFD9;
+    padding: 15px 0;
+    .footer{
+        width: 90%;
+        margin: auto;
+        // .footer-logo{
+        // }
+        .menu{
+            text-align: right;
+            ul{
+                li{
+                    display: inline;
+                    a{
+                        color: #FFFFFFD9;
+                        text-decoration: none;
+                        font-family: $proxima_reg;
+                        font-size: 1rem;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+        .copyright-content{
+            width: max-content;
+            text-align: right;
+            float: right;
+            display: flex;
+            border-top: 1px solid #fff;
+            padding: 5px 15px 0 5px;
+            .social{
+                margin-right: 50px;
+                .social_icons{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer{
+        background:#272727 ;
+        color: #FFFFFFD9;
+        padding: 30px 20px;
+        .footer{
+            width: 100%;
+            margin: auto;
+            .footer-logo{
+                margin-bottom: 25px;    
+            }
+            .menu{
+                text-align: left;
+                ul{
+                    padding-left: 0;
+                    li{
+                        display: block;
+                        a{
+                            color: #FFFFFFD9;
+                            text-decoration: none;
+                            font-family: $proxima_reg;
+                            font-size: 1rem;
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+            .copyright-content{
+                width: 100%;
+                text-align: left;
+                float: none;
+                display: block;
+                border-top: 1px solid #fff;
+                padding: 5px 15px 0 5px;
+                .social{
+                    margin-right: 50px;
+                    margin-bottom: 25px;
+                    .social_icons{
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

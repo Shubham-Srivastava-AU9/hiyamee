@@ -1,0 +1,75 @@
+.notification_page .notification_title {
+    background: #fff;
+    padding: 15px 50px 15px 50px;
+  }
+  
+  .notification_page .notification_title h3 {
+    font-family: "proxima-regular";
+    font-size: 1.75rem;
+    letter-spacing: 0.35px;
+    color: #272727;
+    opacity: 1;
+  }
+  
+  .notification_page .notifications {
+    max-height: 500px;
+    overflow-y: auto;
+    background: transparent;
+  }
+
+  .notification_page .notifications::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+
+  }
+  
+  .notification_page .notifications .notification_holder {
+    background: #E5E5E547;
+    padding: 15px 50px 15px 50px;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  
+  .notification_page .notifications .notification_holder.unread:before {
+    content: '';
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #3771FF;
+    position: block;
+    margin-left: -30px;
+  }
+  
+  .notification_page .notifications .notification_holder .notification {
+    margin-left: 15px;
+  }
+  
+  .notification_page .notifications .notification_holder .notification h3 {
+    font-size: 1.125rem;
+    font-family: "proxima-regular";
+    letter-spacing: 0.23px;
+    color: #272727;
+    margin-bottom: 0;
+  }
+  
+  .notification_page .notifications .notification_holder .notification p {
+    font-size: 1rem;
+    font-family: "proxima-regular";
+    letter-spacing: 0.23px;
+    color: #272727;
+    margin-bottom: 0;
+  }
+  
+  .btn.btn-curved {
+    border-radius: 30px;
+  }
+
+  .nopad {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 24px #00000029;
+    border-radius: 29px;
+    opacity: 1;
+  }

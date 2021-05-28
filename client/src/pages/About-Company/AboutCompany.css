@@ -1,0 +1,530 @@
+.company-header-row {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.company-dp {
+    opacity: 1;
+    box-shadow: 3px 2px 5px 3px #CCC;
+    width: 80% !important;
+    border-radius: 50%;
+}
+
+.company-title {
+    margin-top: 10%;
+    
+    font-family: proxima-bold;
+    margin-left: -10%;
+}
+
+.react-stars {
+    margin-left: 30%;
+}
+
+
+.glassdoor-logo {
+    margin-left: 10%;
+    width: 40%;
+}
+
+
+
+.company-art-row {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.company-art {
+    width: 100%;
+    height: 280px;
+    border-radius: 50px;
+}
+
+
+.headquarters-row {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.headquarters-row > div > h5 {
+    font-family: proxima-bold;
+    font-size: 18px;
+}
+
+
+.linkedin-btn {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+    border: 0;
+    text-align: center;
+    letter-spacing: 0.23px;
+    color: #0C2864;
+    opacity: 1;
+    font-family: proxima-bold;
+    font-size: 15px;
+}
+
+.company-media-row {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.company-media-img {
+    width: 95%;
+}
+
+
+.company-social-media {
+    margin-left: 10%;
+    width: 80%;
+    display:inline-flex;
+    flex-direction: row;
+    font-family: proxima-bold;
+}
+
+.headings {
+    font-family: proxima-bold;
+}
+
+.media-col {
+    margin-bottom: 30px;
+    font-family: proxima-bold;
+}
+
+.text-right {
+    font-family: proxima-bold;
+}
+
+.company-social-media > div {
+    margin-right: 30px;
+}
+
+.linkedin-btn {
+    margin-top: -10px;
+    
+    font-family: proxima-regular;
+}
+
+.edit-social {
+    font-family: proxima-bold;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-auto-rows: 1fr;
+  }
+  
+  .grid::before {
+    content: '';
+    width: 0;
+    padding-bottom: 20%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+  
+  .grid > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    height: 130px;
+  }
+
+  .grid > *:nth-child(2) {
+    height: 130px;
+  }
+
+  .grid > *:nth-child(3) {
+    height: 130px;
+  }
+
+  .grid > *:nth-child(4) {
+    height: 130px;
+  }
+  
+  /* Just to make the grid visible */
+  
+  .grid > * {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px white solid;
+  }
+
+
+  .submit-button-prof-edit {
+    background: #3771FF 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    opacity: 1;
+    color: white;
+    border: 0;
+    height: 60px;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-bottom: 60px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-auto-rows: 1fr;
+  }
+
+  .about-company-job-card {
+      width: 90%;
+      margin-left: 7%;
+  }
+
+  @media screen and (min-width: 1700px) and (max-width: 1980px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        grid-auto-rows: 1fr;
+      }
+    
+}
+
+  @media screen and (min-width: 853px) and (max-width: 988px) {
+      
+    .company-social-media > div > button{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .company-social-media > div > a{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .react-stars {
+        margin-left: 42%;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 30% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 706px) and (max-width: 852px) {
+    .react-stars {
+        margin-left: 40%;
+        
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 30% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .submit-button-prof-edit-div {
+        text-align: center;
+    }
+
+    .submit-button-prof-edit {
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 0%;
+        margin-bottom: 60px;
+      }
+
+
+}
+
+@media screen and (min-width: 532px) and (max-width: 706px) {
+
+    .react-stars {
+        margin-left: 37%;
+        
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 40% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .company-social-media {
+        margin-top: 30px;
+        margin-left: 10%;
+        width: 100%;
+        display:block !important;
+        flex-direction: unset !important;
+    }
+    .company-social-media > div {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .linkedin-btn {
+        margin-top: 0px;
+        
+    }
+
+    .submit-button-prof-edit-div {
+        text-align: center;
+    }
+
+    .submit-button-prof-edit {
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 0%;
+        margin-bottom: 60px;
+      }
+
+}
+
+@media screen and (min-width: 432px) and (max-width: 532px) {
+    .company-social-media > div > button{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .company-social-media > div > a{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .react-stars {
+        margin-left: 33%;
+        
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 40% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .company-social-media {
+        margin-top: 30px;
+        margin-left: 10%;
+        width: 100%;
+        display:block !important;
+        flex-direction: unset !important;
+    }
+    .company-social-media > div {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .linkedin-btn {
+        margin-top: 0px;
+        
+    }
+
+    .submit-button-prof-edit-div {
+        text-align: center;
+    }
+
+    .submit-button-prof-edit {
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 0%;
+        margin-bottom: 60px;
+      }
+
+}
+
+@media screen and (min-width: 326px) and (max-width: 432px) {
+    .company-social-media > div > button{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .company-social-media > div > a{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .react-stars {
+        margin-left: 29%;
+        
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 45% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .company-social-media {
+        margin-top: 30px;
+        margin-left: 10%;
+        width: 100%;
+        display:block !important;
+        flex-direction: unset !important;
+    }
+    .company-social-media > div {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .linkedin-btn {
+        margin-top: 0px;
+        
+    }
+
+    .submit-button-prof-edit-div {
+        text-align: center;
+    }
+
+    .submit-button-prof-edit {
+        width: 70%;
+        margin-top: 40px;
+        margin-left: 0%;
+        margin-bottom: 60px;
+      }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 326px) {
+    .company-social-media > div > button{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .company-social-media > div > a{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .react-stars {
+        margin-left: 23%;
+        
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .fa-star , .fa-star-half-alt {
+        font-size: 15px !important;
+    }
+
+    .company-dp-div {
+        text-align: center;
+    }
+
+    .company-dp {
+        width: 45% !important;
+    }
+    .company-title {
+        margin-top: 10%;
+        
+        font-family: proxima-bold;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .company-social-media {
+        margin-top: 30px;
+        margin-left: 10%;
+        width: 100%;
+        display:block !important;
+        flex-direction: unset !important;
+    }
+    .company-social-media > div {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .linkedin-btn {
+        margin-top: 0px;
+        
+    }
+
+    .submit-button-prof-edit-div {
+        text-align: center;
+    }
+
+    .submit-button-prof-edit {
+        width: 70%;
+        margin-top: 40px;
+        margin-left: 0%;
+        margin-bottom: 60px;
+      }
+
+}

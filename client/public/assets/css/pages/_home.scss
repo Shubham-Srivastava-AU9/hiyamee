@@ -1,0 +1,674 @@
+.main_banner{
+    padding: 100px 0;
+    .banner-content{
+        h1{
+            color: #000;
+            font-family: $proxima_reg;
+            font-size: 2.5rem;
+            margin-left: 60px;
+            b{
+                display: block;
+                font-size:3rem;
+                font-weight: normal;
+            }
+            span.quote-start{
+               img{
+                   width: 75px;
+                   position: absolute;
+                   margin-left: -50px;
+                   margin-top: -20px;
+
+               }
+            }
+
+            margin-bottom:50px;
+        }
+        h3{
+            color: #272727;
+            font-weight: normal;
+            letter-spacing: 0.46px;
+            font-size: 1.5rem;
+            font-family: $proxima_reg;
+        }
+        a.btn.btn-blue{
+            background: $primary_blue 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 22px #00000029;
+            border-radius: 13px;
+            color: #fff;
+            margin: 25px 0;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        p{
+            color: #272727;
+            font-size: 1rem;
+            a{
+                color: $primary_blue;
+                text-decoration: underline;
+                margin-left: 25px;
+            }
+        }
+    }
+    img.banner_image{
+        width: 100%;
+    }
+}
+.gray-section,.grey-section{
+    background: #F6F6F6;
+}
+.trending_platforms{
+    background: #e5e5e5;
+    margin-bottom: 50px;
+    .title_container{
+        text-align: left;
+        width: 80%;
+        h1.title{
+            font-family: $proxima_reg;
+        color: #111111;
+        font-family: 1.5rem;
+        text-transform: uppercase;
+        opacity: 1;
+        }
+    }
+
+    .trending_platforms_container{
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+     
+        .trending_platform_card{
+            text-align: center;
+            img{
+                width: 100%;
+            }
+            p{
+                color: #111111;
+                font-family: $proxima_reg;
+                font-size: 1rem;
+                &.count{
+                    color: $primary_blue;
+                }
+            }
+        }
+    }
+}
+.company_logos{
+    .company_logo_container{
+        display: flex;
+      margin: auto;
+        .company_logo{
+            display: block;
+            width: 150px;
+        }
+    }
+}
+.premium_jobs{
+    padding: 50px 0;
+    .premium_job_title_holder{
+        h1{
+            font-family: $proxima_reg;
+            color: #111111;
+            font-family: 1.5rem;
+            text-transform: uppercase;
+            opacity: 1;  
+        }
+    }
+  
+
+}
+.job_card{
+    margin-bottom: 35px;
+    background: #FFFFFF ;
+    box-shadow: 0px 0px 11px #00000029;
+    border: 1px solid #CFCFCF;
+    border-radius: 35px;
+    &.gray{
+        background: #E5E5E5;
+        border: 1px solid #E5E5E5;
+        box-shadow: none;
+        hr.job_card_divider{
+            border: none;
+            border-top: 2px solid #fff;
+        }
+    }
+    hr.job_card_divider{
+        border: 1px solid $primary_blue;
+    }
+    p{
+        font-weight: 800;
+        font-family: $proxima_reg;
+        font-size: 0.875rem;
+        letter-spacing: 0.17px;
+        color: #111111;
+        margin-bottom: 0;
+    }
+    .company_info{
+        padding: 15px ;
+        padding-bottom: 0;
+        img{
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        p{
+            margin-bottom: 0.5rem;
+        }
+       
+    }
+    .job_info{
+        padding: 15px ;
+        padding-top: 0;
+        p{
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+        }
+        a.btn{
+            font-size: 0.7rem;
+            font-family: $proxima_bold;
+            color: #fff;
+            background: $primary_blue;
+        }
+    }
+}
+
+.testimonials{
+    h1.title{
+        text-align: center;
+        font-family: $proxima_reg;
+        font-size: 2.5rem;
+        letter-spacing: 0.63px;
+        color: #272727;
+        opacity: 1;
+    }
+    .testi_container{
+        margin: 50px 0;
+        .arrow-holder{
+            &:hover{
+                .arrow{
+                    i{
+                        color: $primary_blue;
+                    }
+                }
+            }
+            .arrow{
+                i{
+                    font-size: 3rem;
+                    color: #c0c0c0;
+                }
+            }
+        }
+        .testimonial_holder{
+            .avatar{
+                text-align: center;
+                .image-holder{
+                    position: relative;
+                    margin-bottom: 25px;
+                    img{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        border: 3px solid $primary_blue;
+                        margin: auto;
+                    }
+                    span.dot{
+                        position: absolute;
+                        display: block;
+                        height: 30px;
+                        width: 30px;
+                        background: $primary_blue;
+                        border-radius: 50%;
+                        bottom: -20px;
+                        left: 90px;
+                    }
+                }
+                p{
+                    &.name{
+                        font-family: $josefin;
+                        font-weight: bold;
+                        font-size:1.3125rem;
+                        letter-spacing: 0px;
+                        color: #333333;
+                        opacity: 0.8;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+                .job_desc{
+                    font-family: $sourceserif;
+                    font-size: 14px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                    opacity: 1;
+                }
+            }
+            p.testimonial_content{
+                text-align: left;
+                font-family: $proxima_reg;
+                font-size: 1rem;
+                letter-spacing: 0px;
+                color: #333333;
+                opacity: 0.8;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main_banner{
+        padding: 50px 0;
+        .banner-content{
+            h1{
+                color: #000;
+                font-family: $proxima_reg;
+                font-size: 2rem;
+                margin-left: 0;
+                b{
+                    display: block;
+                    font-size:2.5rem;
+                    font-weight: normal;
+                }
+                span.quote-start{
+                   img{
+                       width: 50px;
+                       position: absolute;
+                       margin-left: 0;
+                       margin-top: -20px;
+    
+                   }
+                }
+    
+                margin-bottom:25px;
+            }
+            h3{
+                color: #272727;
+                font-weight: normal;
+                letter-spacing: 0.46px;
+                font-size: 1.5rem;
+                font-family: $proxima_reg;
+            }
+            a.btn.btn-blue{
+                background: $primary_blue 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 22px #00000029;
+                border-radius: 13px;
+                color: #fff;
+                margin: 25px 0;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            p{
+                color: #272727;
+                font-size: 1rem;
+                a{
+                    color: $primary_blue;
+                    text-decoration: underline;
+                    margin-left: 0;
+                }
+            }
+        }
+        img.banner_image{
+            width: 100%;
+        }
+    }
+    .trending_platforms{
+        padding: 25px 0;
+        margin-bottom: 25px;
+        .title_container{
+            text-align: center;
+            width: 100%;
+            h1.title{
+                font-family: $proxima_reg;
+                color: #111111;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+        }
+    
+        .trending_platforms_container{
+            padding: 10px 0;
+            display: block;
+            align-items: center;
+         
+            .trending_platform_card{
+                text-align: center;
+                img{
+                    width: 60%;
+                }
+                p{
+                    color: #111111;
+                    font-family: $proxima_reg;
+                    font-size: 1rem;
+                    line-height: 0;
+                    margin-bottom: 30px;
+                    display: block;
+                    br{
+                        display: none;
+                    }
+                    &.count{
+                        color: $primary_blue;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .company_logos{
+        .company_logo_container{
+            display: block;
+          margin: auto;
+            .company_logo{
+                display: block;
+                width: 50%;
+                float: left;
+                margin: auto;
+            }
+        }
+    }
+  
+    .job_card{
+        border-radius: 15px;
+        p{
+            font-size: 1rem;
+        }
+        .company_info{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .job_info{
+            p{
+                font-size: 0.9rem;
+            }
+            a.btn{
+                font-size: 0.9rem;
+            }
+        }
+}
+
+    .testimonials{
+        .testi_container{
+            .arrow-holder{
+                display: none;
+                
+            }
+            .testimonial_holder{
+                .avatar{
+                    .image-holder{
+                       
+                        span.dot{
+                            position: absolute;
+                            display: block;
+                            height: 30px;
+                            width: 30px;
+                            background: $primary_blue;
+                            border-radius: 50%;
+                            bottom: -20px;
+                            left: 150px;
+                        }
+                    }
+                   
+                    
+                }
+                p.testimonial_content{
+                  
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                
+            }
+        }
+    }
+
+}
+// @media only screen and (min-width: 601px) and (max-width: 1204px) {}
+@media only screen and (min-width: 601px) and (max-width: 1204px) {
+    .main_banner{
+        padding: 100px 0;
+        .banner-content{
+            h1{
+                color: #000;
+                font-family: $proxima_reg;
+                font-size: 2.5rem;
+                margin-left: 60px;
+                b{
+                    display: block;
+                    font-size:3rem;
+                    font-weight: normal;
+                }
+                span.quote-start{
+                   img{
+                       width: 75px;
+                       position: absolute;
+                       margin-left: -50px;
+                       margin-top: -20px;
+    
+                   }
+                }
+    
+                margin-bottom:50px;
+            }
+            h3{
+                color: #272727;
+                font-weight: normal;
+                letter-spacing: 0.46px;
+                font-size: 1.5rem;
+                font-family: $proxima_reg;
+            }
+            a.btn.btn-blue{
+                background: $primary_blue 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 22px #00000029;
+                border-radius: 13px;
+                color: #fff;
+                margin: 25px 0;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            p{
+                color: #272727;
+                font-size: 1rem;
+                a{
+                    color: $primary_blue;
+                    text-decoration: underline;
+                    margin-left: 25px;
+                }
+            }
+        }
+        img.banner_image{
+            width: 100%;
+        }
+    }
+    .trending_platforms{
+        background: #e5e5e5;
+        margin-bottom: 50px;
+        .title_container{
+            text-align: left;
+            width: 80%;
+            h1.title{
+                font-family: $proxima_reg;
+            color: #111111;
+            font-family: 1.5rem;
+            text-transform: uppercase;
+            opacity: 1;
+            }
+        }
+    
+        .trending_platforms_container{
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+         
+            .trending_platform_card{
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+                p{
+                    color: #111111;
+                    font-family: $proxima_reg;
+                    font-size: 1rem;
+                    &.count{
+                        color: $primary_blue;
+                    }
+                }
+            }
+        }
+    }
+    .company_logos{
+        .company_logo_container{
+            display: block;
+            margin: auto;
+              .company_logo{
+                  display: block;
+                  width: 25%;
+                  float: left;
+                  margin: auto;
+              }
+        }
+    }
+    .premium_jobs{
+        padding: 50px 0;
+        .premium_job_title_holder{
+            h1{
+                font-family: $proxima_reg;
+                color: #111111;
+                font-family: 1.5rem;
+                text-transform: uppercase;
+                opacity: 1;  
+            }
+        }
+      
+    }
+    .job_card{
+        margin-bottom: 35px;
+        background: #FFFFFF ;
+        box-shadow: 0px 0px 11px #00000029;
+        border: 1px solid #CFCFCF;
+        border-radius: 35px;
+        hr.job_card_divider{
+            border: 1px solid $primary_blue;
+        }
+        p{
+            font-weight: 800;
+            font-family: $proxima_reg;
+            font-size: 0.875rem;
+            letter-spacing: 0.17px;
+            color: #111111;
+            margin-bottom: 0;
+        }
+        .company_info{
+            padding: 15px ;
+            padding-bottom: 0;
+            img{
+                width: 60px;
+                height: 60px;
+                background: #fff;
+                border-radius: 50%;
+            }
+            p{
+                margin-bottom: 0.5rem;
+            }
+           
+        }
+        .job_info{
+            padding: 15px ;
+            padding-top: 0;
+            p{
+                font-size: 0.7rem;
+                margin-bottom: 0.5rem;
+            }
+            a.btn{
+                font-size: 0.7rem;
+                font-family: $proxima_bold;
+                color: #fff;
+                background: $primary_blue;
+            }
+        }
+}
+
+    .testimonials{
+        h1.title{
+            text-align: center;
+            font-family: $proxima_reg;
+            font-size: 2.5rem;
+            letter-spacing: 0.63px;
+            color: #272727;
+            opacity: 1;
+        }
+        .testi_container{
+            margin: 50px 0;
+            .arrow-holder{
+                &:hover{
+                    .arrow{
+                        i{
+                            color: $primary_blue;
+                        }
+                    }
+                }
+                .arrow{
+                    i{
+                        font-size: 3rem;
+                        color: #c0c0c0;
+                    }
+                }
+            }
+            .testimonial_holder{
+                .avatar{
+                    text-align: center;
+                    .image-holder{
+                        position: relative;
+                        margin-bottom: 25px;
+                        img{
+                            height: 150px;
+                            width: 150px;
+                            border-radius: 50%;
+                            border: 3px solid $primary_blue;
+                            margin: auto;
+                        }
+                        span.dot{
+                            position: absolute;
+                            display: block;
+                            height: 30px;
+                            width: 30px;
+                            background: $primary_blue;
+                            border-radius: 50%;
+                            bottom: -20px;
+                            left: 90px;
+                        }
+                    }
+                    p{
+                        &.name{
+                            font-family: $josefin;
+                            font-weight: bold;
+                            font-size:1.3125rem;
+                            letter-spacing: 0px;
+                            color: #333333;
+                            opacity: 0.8;
+                            margin-bottom: 0;
+                        }
+                        
+                    }
+                    .job_desc{
+                        font-family: $sourceserif;
+                        font-size: 14px;
+                        letter-spacing: 0px;
+                        color: #666666;
+                        opacity: 1;
+                    }
+                }
+                p.testimonial_content{
+                    text-align: left;
+                    font-family: $proxima_reg;
+                    font-size: 1rem;
+                    letter-spacing: 0px;
+                    color: #333333;
+                    opacity: 0.8;
+                }
+                
+            }
+        }
+    }
+}

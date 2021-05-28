@@ -1,0 +1,208 @@
+.job-stat {
+    width: 80%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 24px #00000029;
+    border-radius: 29px;
+    opacity: 1;
+    margin-left: 10%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.job-stat-h1 {
+    margin-top: 10px;
+    color: #3771FF;
+    font-family: proxima-bold;
+    font-size: 67px !important;
+}
+
+.job-stat-col {
+    
+    background-color: #E5E5E5;
+}
+
+.job-stat-col > p {
+    font-family: proxima-regular;
+    font-size: 16px;
+    color: #272727;
+}
+
+.job-stat-col > h5 {
+    font-family: proxima-regular;
+}
+
+
+
+@media only screen and  (max-width: 900px) {
+
+
+    .job-stat {
+        background-color: white;
+        width: 80%;
+        border-radius: 15px;
+        margin-left: 10%;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .job-stat-top {
+        padding: 30px;
+    }
+
+    .job-stat-col {
+        background-color: #E5E5E5;
+        width: 50%;
+        margin-left: 25%;
+        font-size: 30px;
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+  
+  }
+
+  @media only screen and  (max-width: 626px) {
+
+
+    .job-stat {
+        background-color: white;
+        width: 80%;
+        border-radius: 15px;
+        margin-left: 10%;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .job-stat-top {
+        padding: 30px;
+    }
+
+    .job-stat-col {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 30px;
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+  
+  }
+
+  @media only screen and  (max-width: 450px) {
+
+
+    .job-stat {
+        background-color: white;
+        width: 80%;
+        border-radius: 15px;
+        margin-left: 10%;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .job-stat-top {
+        padding: 30px;
+    }
+
+    .job-stat-col {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+  
+  }
+
+
+  @media only screen and (min-width: 908px) and (max-width: 1921px) {
+
+    .job-stat-col {
+        float: left;
+        width: 33.33%;
+      }
+      
+      /* Clear floats after the columns */
+      .job-stat-row:after {
+        content: "";
+        display: table;
+        clear: both;
+        padding-bottom: 90px;
+      }
+
+      .job-stat-col {
+        width: 25.33%;
+        margin-left: 6%;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 10px;
+        height: 170px;
+    }
+
+    
+  .job-stat-top {
+      padding-bottom: 150px;
+  }
+
+ 
+  .job-stat-dropdown {
+      float: left;
+      margin-top: 60px;
+      margin-left: 100px;
+  }
+
+  .job-stat-h1 {
+      font-size: 40px;
+  }
+    
+  
+  }
+
+
+
+
+
+.job-title-dropdown-row {
+    padding-top: 60px;
+    margin-bottom: 30px;
+
+}
+
+.company-profile-dropdown {
+    background-color: rgb(233,239,255);
+    border-radius: 50px;
+    opacity: 1;
+    height: 50px;
+    justify-content:left;
+    
+}
+
+.job-stat-title {
+    font-family: proxima-bold;
+    text-align: right;
+}
+
+.company-profile-dropdown-holder {
+    float: none;
+    
+    margin-top: -10px;
+    margin-bottom: 0px;
+
+}
+
+
+@media screen and (max-width: 742px) {
+    .job-stat-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .company-profile-dropdown-holder {
+        width: 100%;
+    
+    }
+}

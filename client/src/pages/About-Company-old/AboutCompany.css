@@ -1,0 +1,149 @@
+.about-company-top {
+    padding-top: 60px;
+    margin-left: 7%;
+    padding-bottom: 60px;
+
+}
+
+.about-company-img {
+    width: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px  #F6F6F6;
+    display: inline-flex;
+    margin-top: -20px;
+}
+
+.about-company-top > h4 {
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    color: #000000;
+    opacity: 1;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+
+
+
+/*company art*/
+
+.about-company-art {
+    width: 90%;
+    margin-left: 5%;
+    height: 50vh;
+    border-radius: 30px;
+}
+
+/*About portion */
+
+.about-company-about {
+    display: inline-flex;
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.about-company-about-content {
+    width: 65%;
+}
+
+
+.about-company-about-rating {
+    background-color: #01B552;
+    color: #FFFFFF;
+    width: 20%;
+    border-radius: 25px;
+    margin-left: 70px;
+    height: 95px;
+}
+
+.about-company-about-rating > span{
+    font-weight: 900;
+    font-size: 30px;
+}
+.about-company-glassdoor {
+    width: 45%;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+
+/*ROW*/
+
+.about-company-col {
+    float: left;
+    width: 11%;
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+  
+  /* Clear floats after the columns */
+  .about-company-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* company image grids */
+
+  .about-company-grids {
+      display: inline-flex;
+      margin-left: 7%;
+      margin-top: 30px;
+  }
+
+  .about-company-images {
+      margin-left: 350px;
+  }
+
+  /* Social Media */
+
+  .about-company-social {
+      display: inline-flex;
+  }
+
+  /* Current Job Listing */
+
+  .current-job-listing-heading {
+      margin-left: 3.5%;
+      margin-bottom: 30px;
+  }
+
+
+
+@media screen and (max-width: 575px) {
+    
+      .about-company-video {
+          width: 100%;
+      }
+      
+}
+
+@media screen and (max-width: 429px) {
+    
+    .about-company-video {
+        width: 80%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .about-company-col {
+        float: none;
+        width: 100%;
+      }
+
+      .about-company-about-rating > span{
+        font-weight: 900;
+        font-size: 30px;
+        display: block;
+    }
+      
+      
+}
+
+
+

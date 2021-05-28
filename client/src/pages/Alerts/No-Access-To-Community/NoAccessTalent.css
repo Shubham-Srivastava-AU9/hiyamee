@@ -1,0 +1,239 @@
+.no-access-talent-container {
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 24px #00000029;
+    border-radius: 29px;
+    opacity: 1;
+    padding-bottom: 5%;
+}
+
+.no-access-talent-img {
+    width: 35%;
+    margin-top: 7%;
+    margin-left: 35%;
+}
+
+.no-access-talent-content {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.no-access-talent-phno {
+    width: 7%;
+}
+
+.no-access-talent-bottom-container > p {
+    text-align: left;
+    font: normal normal 600 14px;
+    letter-spacing: 0px;
+    color: #262626;
+    opacity: 1;
+}
+
+.no-access-phno {
+    margin-top: 30px;
+    
+}
+
+.no-access-talent-bottom-container {
+    background-color: rgb(240, 240, 240);
+    padding-left: 40px;
+    height: 20vh;
+    margin-left: 35%;
+    margin-top: 60px;
+}
+
+.no-access-col {
+    float: left;
+    width: 55%;
+  }
+
+  .no-access-col > h1{
+      font-family: proxima-bold;
+      font-size: 40px;
+  }
+
+  .no-access-col > p{
+    font-family: proxima-regular;
+}
+  
+  /* Clear floats after the columns */
+  .no-access-row {
+    content: "";
+    display: table;
+    clear: both;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .no-access-right-col {
+      margin-top: 10%;
+  }
+
+@media screen and (min-width: 366px) and (max-width:596px){
+
+    
+
+    .no-access-talent-bottom-container{
+        display: none;
+        visibility: hidden;
+    }
+
+    .no-access-talent-container {
+        padding-bottom: 30px;
+    }
+    .no-access-talent-bottom-container{
+        display: none;
+        visibility: hidden;
+    }
+
+    .no-access-talent-content {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .no-access-col {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-left: 12%;
+      }
+
+    
+
+    .no-access-row {
+        content: "";
+        display: block;
+        clear: both;
+        width: 80%;
+        margin-left: 0%;
+      }
+
+      .no-access-talent-img {
+        width: 35%;
+        margin-top: 7%;
+        margin-left: 0%;
+    }
+    
+}
+
+@media screen and (min-width: 596px) and (max-width:1018px){
+
+    .no-access-talent-container {
+        padding-bottom: 30px;
+    }
+    .no-access-talent-bottom-container{
+        display: none;
+        visibility: hidden;
+    }
+
+    .no-access-talent-content {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .no-access-col {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-left: 12%;
+      }
+
+    
+
+    .no-access-row {
+        content: "";
+        display: block;
+        clear: both;
+        width: 80%;
+        margin-left: 0%;
+      }
+
+      .no-access-talent-img {
+        width: 35%;
+        margin-top: 7%;
+        margin-left: 0%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1289px) and (max-width:1802px){
+    .no-access-talent-bottom-container{
+        width: 80%;
+        height: 25vh;
+        margin-left: 110%;
+        margin-top: -180px;
+        font-size: 20px;
+    }
+
+    .another-container {
+        visibility: hidden;
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:1123px) and (max-width:1289px){
+    .no-access-talent-bottom-container{
+        width: 80%;
+        height: 25vh;
+        margin-left: 110%;
+        margin-top: -230px;
+        font-size: 20px;
+    }
+    
+    .another-container {
+        visibility: hidden;
+        display: none;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:369px){
+    .no-access-talent-container {
+        padding-bottom: 30px;
+    }
+    .no-access-talent-bottom-container{
+        display: none;
+        visibility: hidden;
+    }
+
+    .no-access-talent-content {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .no-access-col {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-left: 12%;
+      }
+
+    
+
+    .no-access-row {
+        content: "";
+        display: block;
+        clear: both;
+        width: 80%;
+        margin-left: 0%;
+      }
+
+      .no-access-talent-img {
+        width: 35%;
+        margin-top: 7%;
+        margin-left: 0%;
+    }
+    
+}

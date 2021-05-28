@@ -1,0 +1,14 @@
+@import 'dashboard/profile_completion';
+@import 'dashboard/profile_edit_option';
+@import 'dashboard/dashboard';
+@import 'dashboard/auth';
+@import 'dashboard/jobs';
+
+
+
+.btn{
+    &.btn-curved{
+        border-radius:30px ;
+    }
+   
+}

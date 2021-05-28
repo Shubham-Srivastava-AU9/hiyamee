@@ -1,0 +1,149 @@
+
+.active-cand-found-dropdown {
+    margin-top: -10px;
+    margin-bottom: 60px;
+    width: 40% !important;
+}
+
+@media screen and (max-width: 1476px) {
+    .active-cand-found-dropdown {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .active-cand-found-dropdown {
+        width: 100% !important;
+        margin-top: 60px;
+    }
+}
+.arrow-background {
+    background-color: #3771FF !important;
+}
+
+.arrowup svg{
+    color: white;
+}
+
+
+
+
+
+
+
+
+.found-active-text > span {
+    font-family: proxima-bold;
+    font-size: 30px;
+}
+
+.found-active-text{
+    font-size: 30px;
+    font-family: proxima-regular;
+}
+
+
+
+.found-applicants {
+    margin-left: -30px;
+}
+
+.browsed-candidate-face {
+    width: 90%;
+}
+
+.active-candidates-title {
+    margin-left: -20px;
+    letter-spacing: 0.46px;
+    color: #272727;
+    opacity: 1;
+    font-family: proxima-bold;
+}
+
+
+.active-last-active{
+    font-size: 15px;
+    margin-top: -10px;
+    letter-spacing: 0px;
+    color: #BFBFBF;
+    opacity: 1;
+    font-family: proxima-regular;
+}
+
+.applicant-title > h3 > span {
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    color: #272727;
+    opacity: 0.66;
+    font-family: proxima-regular;
+}
+
+.active-last-desc {
+    font-size: 11px;
+    margin-top: -10px;
+    width: 80%;
+    letter-spacing: 0.14px;
+    color: #000000;
+    opacity: 1;
+    font-family: proxima-regular;
+}
+
+
+.active-candidates-row {
+    margin-top: 20px;
+}
+
+.active-candidates-info > h5 {
+    font-family: proxima-bold;
+    font-size: 18px;
+    letter-spacing: 0.29px;
+    color: #585858;
+    opacity: 1;
+}
+
+.active-candidates-info > h5 > span {
+    font-family: proxima-bold;
+    font-size: 18px;
+    letter-spacing: 0.29px;
+    color: #585858;
+    opacity: 1;
+}
+
+.experience-active-cand > h5 {
+    font-family: proxima-regular;
+}
+
+.active-candidates-info > p{
+        
+    font-family: proxima-regular;
+    letter-spacing: 0.25px;
+    color: #585858;
+    opacity: 1;
+}
+
+.skillset-found-app {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 986px){
+
+    .found-applicants {
+        margin-left: 0px;
+    }
+    .browsed-candidate-face {
+        width: 20%;
+        margin-left: 40%;
+        text-align: center;
+    }
+    .active-candidates-title {
+        margin-left: 0px;
+    }
+    .skillset-found-app {
+        text-align: left;
+    }
+    .active-last-desc {
+        width: 100%;
+    }
+    
+}

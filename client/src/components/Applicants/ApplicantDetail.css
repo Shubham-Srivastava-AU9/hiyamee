@@ -1,0 +1,327 @@
+.applicant-detail {
+    margin-top: -30px;
+}
+
+.applicant-detail-img{
+    width: 12%;
+    border-radius: 50%;
+    float: left;
+    margin-top: 15%;
+    
+    margin-left: 20%;
+}
+
+.applicant-detail-col {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .applicant-detail-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+  .applicant-detail-h1 {
+      float: left;
+      margin-left: 3%;
+      margin-top: 15%;
+      font-family: proxima-bold;
+  }
+
+  .applicant-detail-h4{
+    float: left;
+    margin-left: 2%;
+    margin-top: 17.5%;
+    font-family: proxima-regular;
+}
+
+ .last-active {
+     float: left;
+     margin-top: 24%;
+     margin-left: -22%;
+     
+    font-family: proxima-regular;
+ }
+
+ .applicant-button {
+     background-color: rgb(55,113,255);
+     color: white;
+     padding: 5px 15px 5px 15px;
+     margin-top: 30px;
+     margin-left: 60%;
+     
+    font-family: proxima-regular;
+     border-radius: 4px;
+     border: 0;
+ }
+
+ .applicant-message {
+    background: #272727 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    
+    font-family: proxima-regular;
+    margin-top: 10px;
+    margin-left: 60%;
+
+ }
+
+ .applicant-detail-p {
+     text-align: left;
+     margin-left: 10%;
+     
+    font-family: proxima-regular;
+ }
+
+ .applicant-detail-p > p > span {
+    
+    font-family: proxima-bold;
+ }
+
+ .applicant--p > p > span{
+    
+    font-family: proxima-bold;
+ }
+
+
+ @media screen and (min-width: 1790px) and (max-width: 1921px) {
+
+    .last-active {
+        float: left;
+        margin-top: 22%;
+        margin-left: -17%;
+    }
+
+    .applicant-detail-h4{
+        float: left;
+        margin-left: 2%;
+        margin-top: 16.5%;
+    }
+
+    
+}
+
+@media screen and (max-width: 1528px) {
+
+    .last-active {
+        float: left;
+        margin-top: 25%;
+        margin-left: -22%;
+    }
+
+    .applicant-detail-h4{
+        float: left;
+        margin-left: 2%;
+        margin-top: 16.5%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .last-active {
+        float: left;
+        margin-top: 22%;
+        margin-left: -30%;
+    }
+
+    .applicant-detail-h4{
+        float: left;
+        margin-left: 2%;
+        margin-top: 16.5%;
+    }
+}
+
+@media screen and (max-width: 1292px) {
+
+    .last-active {
+        float: left;
+        margin-top: 24%;
+        margin-left: -32%;
+    }
+
+    .applicant-detail-h4{
+        float: left;
+        margin-left: 2%;
+        margin-top: 17%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1161px) {
+
+    .applicant-detail-img{
+        width: 30%;
+        border-radius: 50%;
+        float: none;
+        margin-top: 0%;
+        
+        margin-left: 0%;
+    }
+
+    .applicant-button {
+        margin-left: 0%;
+        margin-top: -0px;
+    }
+
+    .applicant-message {
+        margin-top: 5%;
+        margin-left: 0%;
+        
+    
+     }
+    
+    .applicant-detail-col {
+        float: none;
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 25%;
+        text-align: center;
+      }
+      
+      /* Clear floats after the columns */
+      .applicant-detail-row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      .applicant-detail-h1 {
+          float: none;
+          margin-left: 0%;
+          margin-top: 0%;
+      }
+    
+      .applicant-detail-h4{
+        float: none;
+        margin-left: 0%;
+        margin-top: -5%;
+    }
+    
+     .last-active {
+         float: none;
+         margin-top: 0%;
+         margin-left: -0%;
+     }
+
+     .applicant-detail-btn {
+        margin-top: -20%;
+    }
+
+    .applicant-detail-p {
+        margin-left:0%;
+        text-align: center;
+    }
+
+    .applicant-detail {
+        margin-top: -30px;
+    }
+}
+
+
+@media screen and (max-width: 835px) {
+    .applicant-detail-img{
+        width: 30%;
+        border-radius: 50%;
+        float: none;
+        margin-top: 0%;
+        
+        margin-left: 0%;
+    }
+
+    .applicant-button {
+        margin-left: 0%;
+        margin-top: -0px;
+    }
+    
+    .applicant-detail-col {
+        float: none;
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 25%;
+        text-align: center;
+      }
+      
+      /* Clear floats after the columns */
+      .applicant-detail-row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      .applicant-detail-h1 {
+          float: none;
+          margin-left: 0%;
+          margin-top: 0%;
+      }
+    
+      .applicant-detail-h4{
+        float: none;
+        margin-left: 0%;
+        margin-top: -5%;
+    }
+    
+     .last-active {
+         float: none;
+         margin-top: 0%;
+         margin-left: -0%;
+     }
+
+     .applicant-detail-btn {
+        margin-top: -20%;
+    }
+
+    .applicant-detail-p {
+        margin-left:0%;
+        text-align: center;
+    }
+
+    .applicant-detail {
+        margin-top: -30px;
+    }
+}
+
+
+
+
+.applicant-box {
+    margin-top: 60px;
+    width: 80%;
+    margin-left: 7%;
+}
+
+.total-applicant-face {
+    width: 100% !important;
+}
+
+@media screen and (max-width:988px) {
+    .total-applicant-face {
+        width: 60% !important;
+        margin-left: 0% !important;
+    }
+
+    .total-applicant-candidate_dp {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn-applied-cand {
+        margin-right: 30px;
+    }
+
+    .total-applicants-container {
+        margin-left: 6% !important;
+    }
+
+    .job-title-heading {
+        padding-left: 0px !important;
+        text-align: center;
+    }
+
+    
+}

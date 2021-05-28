@@ -1,0 +1,53 @@
+.notification_page{
+    .notification_title{
+        background: #fff;
+        padding: 15px 50px 15px 50px;
+        h3{
+                font-family: $proxima_reg;
+                font-size: 1.75rem;
+
+                letter-spacing: 0.35px;
+                color: #272727;
+                opacity: 1;
+        }
+    }
+    .notifications{
+        max-height: 500px ;
+        overflow-y: auto;
+        .notification_holder{
+            background: #E5E5E547 ;
+            padding: 15px 50px 15px 50px;
+            margin-bottom: 25px;
+            display: flex;
+            position: relative;
+            &.unread{
+               &:before{
+                content: '';
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                background: $primary_blue;
+                position: block;
+                margin-left: -30px;
+               }
+            }
+            .notification{
+                margin-left: 15px;
+                h3{
+                        font-size:1.125rem;
+                        font-family:$proxima_reg;
+                        letter-spacing: 0.23px;
+                        color: #272727;
+                        margin-bottom: 0;
+                }
+                p{
+                    font-size:1rem;
+                    font-family:$proxima_reg;
+                    letter-spacing: 0.23px;
+                    color: #272727;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

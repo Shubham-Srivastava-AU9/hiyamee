@@ -1,0 +1,31 @@
+.center_container{
+    padding: 150px 0;
+   img{
+       width: 80%;
+       margin: auto;
+   }
+   .profile_completion_content{
+       h1{
+           font-size: 3rem;
+           font-family: $proxima_bold;
+           color: $primary_green;
+
+       }
+       h3{
+           font-size: 2rem;
+           font-family: $proxima_bold;
+           color: #000;
+
+       }
+       p{
+           font-size: 1rem;
+           font-family: $proxima_reg;
+           color: #272727;
+           width: 60%;
+       }
+       .btn{
+           margin-right: 25px;
+       }
+      
+   }
+}

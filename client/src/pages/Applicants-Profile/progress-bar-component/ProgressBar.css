@@ -1,0 +1,20 @@
+.dashboard {
+    background-color: white !important;
+}
+
+.professional-skill-set {
+    box-shadow: 0px 0px 0px #00000080 !important;
+}
+
+.progress-bar-title {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: proxima-bold;
+}
+
+.progress-bar-col {
+    margin-bottom: 60px;
+    font-family: proxima-regular;
+}
+
+

@@ -1,0 +1,64 @@
+.prof-exp-col {
+    float: left;
+    width: 28%;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color:#979797;
+    font-family: proxima-bold;
+    
+  }
+
+  .prof-exo-col > h5 {
+    color: #585858;
+  }
+  
+  /* Clear floats after the columns */
+  .prof-exp-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .prof-exp-heading {
+      text-align: left;
+      margin-left: 5%;
+      margin-top: 5%;
+      font-family: proxima-bold;
+      color: black;
+  }
+
+
+  @media screen and (max-width: 828px) {
+
+
+    .prof-exp-heading {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    
+    .prof-exp-col {
+        float: left;
+        width: 30%;
+        margin-left: 3%;
+        text-align: center;
+        margin-bottom: 5%;
+        padding-bottom: 15px;
+    }
+      
+  }
+
+  @media screen and (max-width: 666px) {
+
+    .prof-exp-col {
+        float: none;
+        width: 100%;
+        margin-left: 3%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+      
+  }

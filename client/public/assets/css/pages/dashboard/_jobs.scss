@@ -1,0 +1,59 @@
+.job-card-title-holder{
+   a{
+       text-decoration: none;
+    .card-custom-title{
+            font-family: $proxima_reg;
+            font-weight: normal;
+            font-size: 1.5rem;
+            letter-spacing: 0.47px;
+            color: #A2A2A2;
+            width: max-content;
+            margin: auto;
+            &.active{
+                color: #3771FF;
+                font-weight: bold;
+                &:after{
+                    content: '';
+                    height: 3px;
+                    width: 100%;
+                    background: #000;
+                    display: block;
+                    margin-top: 12px;
+                }
+            }
+    }
+   }
+}
+.filter-holder{
+    text-align: right;
+    width: 50%;
+    float: right;
+    margin-top:20px;
+   .filter{
+    .input-group{
+       
+        .input-group-prepend{
+            
+            .input-group-text{
+                background: #E3E3E3;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                span{
+                    font-size: 1.2rem;
+                    padding: 5px 10px;
+                    color: $primary_blue;
+                }
+            }
+        }
+        .form-control{
+            height: 50px;
+            font-size: 1.2rem;
+            background: #E3E3E3;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+    }
+}
+
+}

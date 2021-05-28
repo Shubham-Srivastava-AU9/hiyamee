@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Serif+Pro&display=swap');
+$primary_blue:#3771FF;
+$primary_green:#37A145;
+.custom-container{
+    width: 90%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'proxima-regular';
+    src: url('/assets/fonts/proxima_nova_regular.ttf');
+}
+@font-face {
+    font-family: 'proxima-bold';
+    src: url('/assets/fonts/proxima_nova_bold.ttf');
+}
+
+$proxima_reg :'proxima-regular';
+$proxima_bold :'proxima-bold';
+$josefin :'Josefin Sans';
+$sourceserif:'Source Serif Pro';
+
+.title_container{
+    background: #e5e5e5;
+    h1{
+        font-family: $proxima_reg;
+        color: #111111;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        opacity: 1;
+        padding: 15px 0;
+    }
+    margin-bottom: 0;
+}
+
+
+.btn{
+    &.btn-blue{
+        background: $primary_blue;
+        color: #fff;
+    }
+}
+
+.btn-link{
+    color: #272727;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: #272727;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .custom-container{
+        width: 90%;
+        margin: auto;
+    }
+}

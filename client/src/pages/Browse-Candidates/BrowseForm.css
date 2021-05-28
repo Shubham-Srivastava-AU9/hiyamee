@@ -1,0 +1,334 @@
+.browse-form {
+  margin-left: 8%;
+  padding-top: 30px;
+}
+
+.browse-form > h4 {
+  margin-bottom: 30px;
+  font-family: proxima-bold;
+}
+
+.browse-form-fields {
+  margin-top: 0px;
+  font-family: proxima-regular;
+  color: #000000;
+}
+
+.browse-form-labels {
+  width: 15%;
+}
+
+.browse-form-sublabel {
+  margin-left: 60px;
+}
+
+.gender {
+  margin-left: 5px;
+}
+
+.browse-candidate-btn-div {
+  text-align: center;
+}
+
+.browse-candidate-btn {
+  background: #3771FF 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  padding: 5px 25px 5px 40px;
+  height: 50px;
+  font-size: 18px;
+  font-family: proxima-regular;
+  font-weight: 600;
+  border: 0;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.fa-search {
+  margin-left: -20px;
+  margin-right: 30px;
+}
+
+
+/*Input Fields*/
+
+.browse-cand-input{
+  background: #E1E1E1 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 0.64;
+  border: 0;
+  margin-left: 0px;
+  padding: 8px 0px 8px 20px;
+  width: 72.5%;
+}
+
+  
+  /*Exp Range*/
+
+  .exp-range {
+    display: inline-flex;
+}
+
+
+
+/*Dropdown*/
+
+.exp-dropbtn-col {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
+
+
+
+
+.exp-dropbtn {
+    background: #E1E1E1 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    opacity: 0.64;
+    border: 0;
+    padding: 8px 80px 8px 20px;
+    
+    
+  }
+
+  .exp-dropbtn2 {
+    background: #E1E1E1 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    opacity: 0.64;
+    border: 0;
+    padding: 8px 80px 8px 20px;
+    
+    
+  }
+  
+  .exp-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .dropdown-float1 {
+    float: left;
+    
+  }
+
+  .dropdown-float2 {
+    float: left;
+    margin-left: 150px;
+    margin-top: -64px;
+  }
+
+  
+  
+  .exp-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .exp-dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .form-br {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .search-icon-border {
+    border-right: 2px solid white;
+    margin-right: 20px;
+  }
+  
+  .exp-dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+  
+  .exp-dropdown:hover .exp-dropdown-content {display: block;}
+  
+  .exp-dropdown:hover .exp-dropbtn {background-color: #777777;}
+
+
+
+  @media screen and (max-width: 1113px) {
+    
+
+   .dropdown-float1 {
+    float: none;
+    
+  }
+
+  .dropdown-float2 {
+    float: none;
+    margin-left: 150px;
+    margin-top: -64px;
+  }
+  .exp-dropbtn-col {
+    display: block;
+  }
+
+  .exp-dropdown {
+  position: relative;
+  display: block;
+  margin-left: 10px;
+  }
+
+  .exp-dropbtn {
+    padding: 8px 20px 8px 20px;
+    
+    
+  }
+
+  .exp-dropbtn2 {
+    padding: 8px 20px 8px 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    
+    
+  }
+
+  .browse-form-sublabel {
+    margin-left: 50px;
+  }
+
+
+  /*candidate diversity*/
+
+  .candidate-diversity {
+    width: 100%;
+  }
+
+  .candidate-diversity-label {
+    width: 30%;
+  }
+  
+  .form-br {
+    visibility: visible;
+    display: block;
+  }
+  .preffered-location-input {
+    margin-top: 10px;
+  }
+
+    
+  }
+
+
+
+
+  @media screen and (max-width: 644px) {
+    
+
+   .preffered-location-input {
+     margin-top: 10px;
+   }
+
+   .candidate-diversity-label {
+    width: 95% !important;
+  }
+
+  .browse-form-labels {
+    width: 100%;
+  }
+
+  .browse-form-sublabel {
+    width: 100%;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .exp-dropbtn-col {
+    display: inline-flex;
+    padding-right: 5px;
+  }
+
+  .exp-range {
+    display: block;
+}
+
+
+}
+
+
+@media screen and (max-width: 490px) {
+    
+
+  .preffered-location-input {
+    margin-top: 10px;
+  }
+
+  .candidate-diversity-label {
+   width: 90% !important;
+ }
+
+ .browse-form-labels {
+   width: 100%;
+ }
+
+ .browse-form-sublabel {
+   width: 100%;
+   margin-left: 70px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+ }
+
+ .exp-dropbtn-col {
+   display: inline-flex;
+   padding-right: 5px;
+ }
+
+ .exp-range {
+   display: block;
+}
+
+.preffered-location-label {
+  width: 90%;
+}
+
+
+}
+
+
+
+/* Active Candidates */
+
+.applicant-detail-2 {
+  margin-left: -70px ;
+}
+
+.job-posting-img {
+  width: 18%;
+}
+
+.browse-last-active {
+  float: left;
+  margin-top: 26%;
+  margin-left: -46%;
+  
+ font-family: proxima-regular;
+}
+
+.job-post-description {
+  width: 85%;
+  margin-left: 90px;
+
+}
+
+.candidate-details {
+  width: 100%;
+  margin-left: 11%;
+}
+
+
+
+
+
