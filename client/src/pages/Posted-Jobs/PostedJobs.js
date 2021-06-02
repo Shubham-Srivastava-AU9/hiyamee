@@ -15,27 +15,18 @@ const PostedJobs =()=>{
 
     useEffect(() => {
         getJob()
-
-        // getJob().then(()=>{
-        //     console.log(jobs.jobs,'vishnu')
-        //     setShowJobs(jobs.jobs)
         },[])
-        useEffect(()=>{
-           setShowJobs(jobs.jobs)
-           console.log(jobs.jobs,'vishnu')
 
-        },[jobs])
+    useEffect(()=>{
+        setShowJobs(jobs.jobs)
+        console.log(jobs.jobs,'vishnu')
 
-        
-
-        
-    // }, [])
-
+    },[jobs])
     return (
         <>
-        {showJobs?.map((item)=>{
+        {/* {showJobs?.map((item)=>{
             console.log(item,'shubham')
-        })}
+        })} */}
         <div className="posted-jobs" style={{backgroundColor: '#F6F6F6'}}>
         <AuthDBHeader />
     <div className="all-jobs">
@@ -43,19 +34,13 @@ const PostedJobs =()=>{
             <div>
                 <h2 class="bottom-container-heading"> Posted Jobs</h2>
             </div>
-
             <div className="bottom-container-jobcard-row">
                 <div className="bottom-container-jobcard-col">
                 <JobCardv2 job ={showJobs}
                 />
                 </div>
-               
-                
             </div>
-
-
         </div>
-      
     </div>
     <Footer />
 </div>

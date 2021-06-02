@@ -1,10 +1,25 @@
-import React from "react";
+import React,{useContext,useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./CompanyName.css";
+import AuthContext from "../../../context/auth/authContext"
 
 
 
-function CompanyName() {
+
+const CompanyName=()=> {
+  const authContext = useContext(AuthContext)
+  const {user} = authContext;
+  // console.log(user);
+//   const [showUser,setUser] = useState([])
+
+//   useEffect(()=>{
+//     setUser(user.user)
+//     // console.log(jobs.jobs,'vishnu')
+
+//  },[user])
+
+
+
   return (
     <div className="company-name">
         <div className="company-name-row row">
@@ -13,8 +28,8 @@ function CompanyName() {
             </div>
 
             <div className="col-lg-6 company-profile-title">
-                <h3>ACME Corporation</h3>
-                <label>@ACMEcorp</label>
+                <h3>{user.name}</h3>
+                <label>{user.email}</label>
                 <br />
                 <Link to="about-company" >View/ Edit Profile</Link>
             </div>

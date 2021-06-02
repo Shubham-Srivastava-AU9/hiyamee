@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SideContent from '../../components/Auth/SideContent'
 
+
 const GetStartedOne = () => {
 
     const onClickHandler = async (e) => {

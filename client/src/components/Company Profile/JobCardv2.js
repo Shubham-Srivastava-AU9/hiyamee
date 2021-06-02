@@ -3,15 +3,8 @@ import { Link } from "react-router-dom";
 import JobContext from '../../context/jobs/jobsContext';
 // import jobsReducer from "../../context/jobs/jobsReducer";
 
-
-
 const JobCardv2 = ({job}) =>{
    console.log(job,'mou');
-
-   
-   
-   
-    
     return(
         <>
         {job?.map((item)=>{
@@ -19,7 +12,7 @@ const JobCardv2 = ({job}) =>{
 
             return(
                 <div class="job-card">
-            <div class="job-card-row">
+                <div class="job-card-row">
                 <div class="job-card-col job-card-left">
                     <h6 class="job-card-header">{item.title}</h6>
                     

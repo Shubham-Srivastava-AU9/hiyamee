@@ -5,7 +5,10 @@ import Footer from "../../components/Home/Footer";
 import JobCard from "../../components/Home/JobCard";
 import "./AboutCompany.css";
 
+
 const AboutCompany = () => {
+
+
 
     const [edit, setEdit] = useState("false");
 
