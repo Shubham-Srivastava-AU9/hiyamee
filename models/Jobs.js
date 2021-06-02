@@ -16,18 +16,21 @@ description: {
 job_type: {
     type: String
 },
-skill_sets: [{
-    name: String,
-    description: String
+skills_sets: [{
+    skills1:String,
+    skills2:String,
+    skills3:String,
+    skills4:String
+    
 }],
 experience: {
     minimum: {
         type: Number,
-        required: [true, "Please provide the required experience for the position"]
+        // required: [true, "Please provide the required experience for the position"]
     },
     maximum: {
         type: Number,
-        required: [true, "Please provide the required experience for the position"]
+        // required: [true, "Please provide the required experience for the position"]
     },
 },
 locations: [{
@@ -36,7 +39,8 @@ locations: [{
 salary_offered: {
     minimum: Number,
     maximum: Number,
-    negotiable: Boolean
+    negotiable: Boolean,
+    
 },
 status: {
     type: String,

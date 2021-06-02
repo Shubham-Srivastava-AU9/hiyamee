@@ -1,4 +1,3 @@
-
 .active-cand-found-dropdown {
     margin-top: -10px;
     margin-bottom: 60px;
@@ -42,10 +41,14 @@
     font-family: proxima-regular;
 }
 
+.found-applicants-container {
+    margin-left: 30px;
+}
+
 
 
 .found-applicants {
-    margin-left: -30px;
+    margin-left: 0px;
 }
 
 .browsed-candidate-face {
@@ -145,5 +148,15 @@
     .active-last-desc {
         width: 100%;
     }
+    .found-applicants-container {
+        margin-left: 5%;
+        width: 90%;
+    }
     
+    
+}
+
+.browsed-candidate-job-sidebar {
+    width: 100%;
+    margin-left: 0px;
 }

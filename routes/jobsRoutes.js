@@ -21,7 +21,7 @@ router.get('/all', async (req, res) => {
   });
 
 // @route     GET api/job
-// @desc      Get all users job
+// @desc      Get  user job
 // @access    Private
 router.get('/', auth, async (req, res) => {
   try {
@@ -54,14 +54,14 @@ router.post(
       return res.status(400).json({errors: errors.array()});
     }
 
-    const {title, description,job_type , skill_sets, experience , locations , salary_offered } = req.body;
+    const {title, description ,job_type , skills_sets, experience , locations , salary_offered } = req.body;
 
     try {
       const newJob = new Jobs({
         title,
         description,
         job_type,
-        skill_sets,
+        skills_sets,
         experience,
         locations,
         salary_offered,
@@ -82,14 +82,14 @@ router.post(
 // @desc      Update job
 // @access    Private
 router.put('/:id', auth, async (req, res) => {
-  const {title, description,job_type , skill_sets, experience , locations , salary_offered } = req.body;
+  const {title, description,job_type , skills_sets, experience , locations , salary_offered } = req.body;
 
   // Build contact object
   const contactFields = {};
   if (title) contactFields.title = title;
   if (description) contactFields.description = description;
   if (job_type) contactFields.job_type = job_type;
-  if (skill_sets) contactFields.skill_sets = skill_sets;
+  if (skills_sets) contactFields.skill_sets = skills_sets;
   if (experience) contactFields.experience = experience;
   if (locations) contactFields.locations = locations;
   if (salary_offered) contactFields.salary_offered = salary_offered;

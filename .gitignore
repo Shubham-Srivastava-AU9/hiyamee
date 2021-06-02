@@ -1,1 +1,49 @@
 node_modules
+const jobContext = useContext(JobContext)
+    const {jobs, getJob} = jobContext;
+    console.log(jobs);
+    // console.log(jobs);
+
+    // useEffect(() => {
+    //     getJob()
+    //     //eslint-disable-next-line
+        
+    // }, [])
+
+
+
+
+    <div className="posted-jobs" style={{backgroundColor: '#F6F6F6'}}>
+            <AuthDBHeader />
+                <div className="all-jobs">
+                    <div class="bottom-container">
+                        <div>
+                            <h2 class="bottom-container-heading"> Posted Jobs</h2>
+                        </div>
+                        {jobs.map((job)=>{
+                            return <h5>{job.title}</h5>
+                                
+                            })}
+                        <div className="bottom-container-jobcard-row">
+                            <div className="bottom-container-jobcard-col">
+                            
+                                {/* return <JobCardv2 
+                                    title= {job.title}
+                                    // status= "Active"
+                                    // timePostedBody= "Posted 3 days Ago"
+                                    // location= "Banglore, Karnataka"
+                                    // experience= "3-4 Years"
+                                    // package= "$10000-$10000 a year"
+                                    
+                                    />  */}
+                                
+                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <Footer />
+        </div> 
+        
+    )

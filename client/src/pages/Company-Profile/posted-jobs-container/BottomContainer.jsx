@@ -8,7 +8,7 @@ function BottomContainer () {
     return(
         <div class="bottom-container">
             <div>
-                <h4 class="bottom-container-heading"> Posted Jobs</h4>
+                <h4 class="bottom-container-heading"> Posted</h4>
             </div>
 
             <div className="bottom-container-jobcard-row">

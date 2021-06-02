@@ -1,16 +1,43 @@
-import React from "react";
+import React,{Fragment, useContext , useEffect, useState} from "react";
 import JobCardv2 from "../../components/Company Profile/JobCardv2";
 import AuthDBHeader from "../../components/dashboard/AuthDBHeader";
 import Footer from "../../components/Home/Footer";
 import "./PostedJobs.css";
+import JobContext from '../../context/jobs/jobsContext'
 
+const PostedJobs =()=>{
+    const jobContext = useContext(JobContext)
+    const {jobs, getJob} = jobContext;
+    console.log(jobs,"--->");
+    const [showJobs,setShowJobs] = useState([])
+    
+   
 
+    useEffect(() => {
+        getJob()
 
+        // getJob().then(()=>{
+        //     console.log(jobs.jobs,'vishnu')
+        //     setShowJobs(jobs.jobs)
+        },[])
+        useEffect(()=>{
+           setShowJobs(jobs.jobs)
+           console.log(jobs.jobs,'vishnu')
 
-function PostedJobs() {
-  return (
-<div className="posted-jobs" style={{backgroundColor: '#F6F6F6'}}>
-    <AuthDBHeader />
+        },[jobs])
+
+        
+
+        
+    // }, [])
+
+    return (
+        <>
+        {showJobs?.map((item)=>{
+            console.log(item,'shubham')
+        })}
+        <div className="posted-jobs" style={{backgroundColor: '#F6F6F6'}}>
+        <AuthDBHeader />
     <div className="all-jobs">
         <div class="bottom-container">
             <div>
@@ -19,86 +46,11 @@ function PostedJobs() {
 
             <div className="bottom-container-jobcard-row">
                 <div className="bottom-container-jobcard-col">
-
-                <JobCardv2 
-                    jobname= "Badvanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
+                <JobCardv2 job ={showJobs}
                 />
                 </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= " Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
-                <div className="bottom-container-jobcard-col">
-                <JobCardv2 
-                    jobname= "Advanced Software Developer"
-                    status= "Active"
-                    timePostedBody= "Posted 3 days Ago"
-                    location= "Banglore, Karnataka"
-                    experience= "3-4 Years"
-                    package= "$10000-$10000 a year"
-                />
-                </div>
+               
+                
             </div>
 
 
@@ -107,8 +59,19 @@ function PostedJobs() {
     </div>
     <Footer />
 </div>
+        </>
+    )
+      }
+       
+
+
+
+
+        
+
     
-  );
-}
+
+
+
 
 export default PostedJobs;

@@ -5,6 +5,8 @@ import AuthState from './context/auth/AuthState';
 import AlertState from './context/alert/AlertState';
 import setAuthToken from '../src/utils/setAuthToken'
 import NotFound from './pages/Misc/NotFound'
+import JobState from './context/jobs/JobState';
+
 
 
 
@@ -21,16 +23,19 @@ const App = () => {
 
   return (
     <AuthState>
-    <AlertState>
-    <Router>
-      <div className = "App">
-        <MainBuilder />
-      </div>
-      <Switch>
-        <Route exact path='/404' component={NotFound} />
-      </Switch>
-    </Router>
-    </AlertState>
+        <AlertState>
+        <JobState>
+          <Router>
+            <div className = "App">
+              <MainBuilder />
+            </div>
+        <Switch>
+            <Route exact path='/404' component={NotFound} />
+        </Switch>
+          </Router>
+          </JobState>
+        </AlertState>
+      
     </AuthState>
   )
 }

@@ -15,7 +15,7 @@ export default function TwoButtons() {
         
       </div> 
       <div className="button-two-div">
-        <Link to='/no-access-to-community'><button variant="contained" size="large" color="primary" className="two-buttons-grp button-two">
+        <Link to='/browse-candidates'><button variant="contained" size="large" color="primary" className="two-buttons-grp button-two">
           BROWSE CANDIDATES
         </button></Link>
         

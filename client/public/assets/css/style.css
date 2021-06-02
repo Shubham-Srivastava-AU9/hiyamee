@@ -2629,6 +2629,14 @@ h3.about_carousel_titles {
   border: 1px solid #CFCFCF;
   border-radius: 35px;
   opacity: 0.89;
+  
+}
+
+.job-card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -2636,6 +2644,7 @@ h3.about_carousel_titles {
   float: left;
   width: 50%;
   font-size: 13.5px;
+  
 }
 
 .job-card-row:after {
@@ -2760,6 +2769,9 @@ h3.about_carousel_titles {
       width: 30%;
   }
 }
+
+
+
 
 
 /* Get Started Text */
