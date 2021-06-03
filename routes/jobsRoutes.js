@@ -21,26 +21,13 @@ router.get('/all', async (req, res) => {
   });
 
 // @route     GET api/job
-// @desc      Get  user job
+// @desc      Get all users job
 // @access    Private
 router.get('/', auth, async (req, res) => {
   try {
-    const jobs = await Jobs.find({}).sort({
+    const jobs = await Jobs.find({user: req.user.id}).sort({
       date: -1,
     });
-    res.json({jobs});
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server Error');
-  }
-});
-// @route     GET api/job
-// @desc      Get  Specific job by id
-// @access    Private
-router.get('/:id', auth, async (req, res) => {
-
-  try {
-    const jobs = await Jobs.findById(req.params.id)
     res.json({jobs});
   } catch (err) {
     console.error(err.message);
@@ -67,14 +54,14 @@ router.post(
       return res.status(400).json({errors: errors.array()});
     }
 
-    const {title, description ,job_type , skills_sets, experience , locations , salary_offered } = req.body;
+    const {title, description,job_type , skill_sets, experience , locations , salary_offered } = req.body;
 
     try {
       const newJob = new Jobs({
         title,
         description,
         job_type,
-        skills_sets,
+        skill_sets,
         experience,
         locations,
         salary_offered,
@@ -95,14 +82,14 @@ router.post(
 // @desc      Update job
 // @access    Private
 router.put('/:id', auth, async (req, res) => {
-  const {title, description,job_type , skills_sets, experience , locations , salary_offered } = req.body;
+  const {title, description,job_type , skill_sets, experience , locations , salary_offered } = req.body;
 
   // Build contact object
   const contactFields = {};
   if (title) contactFields.title = title;
   if (description) contactFields.description = description;
   if (job_type) contactFields.job_type = job_type;
-  if (skills_sets) contactFields.skill_sets = skills_sets;
+  if (skill_sets) contactFields.skill_sets = skill_sets;
   if (experience) contactFields.experience = experience;
   if (locations) contactFields.locations = locations;
   if (salary_offered) contactFields.salary_offered = salary_offered;

@@ -21,7 +21,6 @@ import {
 const JobState = props => {
     const initialState = {
       jobs :[],
-      // job:[],
       current: null,
       filtered: null,
       error: null

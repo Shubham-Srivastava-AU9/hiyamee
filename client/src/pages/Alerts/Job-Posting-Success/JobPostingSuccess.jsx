@@ -12,7 +12,7 @@ export default function JobPostingSuccess (){
                 <div className="job-posting-success-container">
                     <div className="job-posting-success-row">
                         <div className="job-posting-success-col">
-                            <img className="job-posting-success-img" src="assets/img//alerts/job-posting-tick.png" />
+                            <img className="job-posting-success-img" src= "assets/img//alerts/job-posting-tick.png" />
                         </div>
                         <div className="job-posting-success-col job-posting-success-heading">
                             <h1> Your Job Posting has been <span class="job-posting-span"><br></br>Successfully Completed!</span></h1>
