@@ -8,7 +8,6 @@ const jobsSchema = mongoose.Schema({
   
   title: {
     type: String,
-    required: [true, "Please provide a name for the position"]
 },
 description: {
     type: String,
@@ -39,7 +38,7 @@ locations: [{
 salary_offered: {
     minimum: Number,
     maximum: Number,
-    negotiable: Boolean,
+    negotiable:String,
     
 },
 status: {

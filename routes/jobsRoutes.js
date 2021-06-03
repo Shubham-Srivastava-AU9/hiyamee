@@ -25,9 +25,22 @@ router.get('/all', async (req, res) => {
 // @access    Private
 router.get('/', auth, async (req, res) => {
   try {
-    const jobs = await Jobs.find({user: req.user.id}).sort({
+    const jobs = await Jobs.find({}).sort({
       date: -1,
     });
+    res.json({jobs});
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+// @route     GET api/job
+// @desc      Get  Specific job by id
+// @access    Private
+router.get('/:id', auth, async (req, res) => {
+
+  try {
+    const jobs = await Jobs.findById(req.params.id)
     res.json({jobs});
   } catch (err) {
     console.error(err.message);

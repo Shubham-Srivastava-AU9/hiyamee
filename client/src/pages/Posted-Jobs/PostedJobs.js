@@ -4,11 +4,12 @@ import AuthDBHeader from "../../components/dashboard/AuthDBHeader";
 import Footer from "../../components/Home/Footer";
 import "./PostedJobs.css";
 import JobContext from '../../context/jobs/jobsContext'
+import { Link } from "react-router-dom";
 
 const PostedJobs =()=>{
     const jobContext = useContext(JobContext)
     const {jobs, getJob} = jobContext;
-    console.log(jobs,"--->");
+    // console.log(jobs,"--->");
     const [showJobs,setShowJobs] = useState([])
     
    
@@ -19,14 +20,14 @@ const PostedJobs =()=>{
 
     useEffect(()=>{
         setShowJobs(jobs.jobs)
-        console.log(jobs.jobs,'vishnu')
+        // console.log(jobs.jobs,'vishnu')
 
     },[jobs])
     return (
         <>
-        {/* {showJobs?.map((item)=>{
+        {showJobs?.map((item)=>{
             console.log(item,'shubham')
-        })} */}
+        })}
         <div className="posted-jobs" style={{backgroundColor: '#F6F6F6'}}>
         <AuthDBHeader />
     <div className="all-jobs">
@@ -34,12 +35,14 @@ const PostedJobs =()=>{
             <div>
                 <h2 class="bottom-container-heading"> Posted Jobs</h2>
             </div>
+
             <div className="bottom-container-jobcard-row">
                 <div className="bottom-container-jobcard-col">
-                <JobCardv2 job ={showJobs}
+                <JobCardv2 job ={showJobs} 
                 />
                 </div>
             </div>
+            
         </div>
     </div>
     <Footer />

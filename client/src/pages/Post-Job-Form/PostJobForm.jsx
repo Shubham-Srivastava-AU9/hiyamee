@@ -9,38 +9,38 @@ import JobContext from '../../context/jobs/jobsContext'
 
 const PostJobForm = props =>{
     const jobContext = useContext(JobContext)
-    const {addJob , current} = jobContext
+    const {addJob , current } = jobContext
+
+
     
     useEffect(()=>{
         if(current !==null){
             SetJob(current);
-        }else {
+        }else{
             SetJob({
-                title :'',
-                description:'',
-                job_type:'',
-                skills_sets:[
-                    {
-                    skills1:'',
-                    skills2:'',
-                    skills3:'',
-                    skills4:''
-                    },
-                ],
-                locations:'',
-                experience:{
-                    minimum:'',
-                    maximum:''
+            title :'',
+            description:'',
+            job_type:'',
+            skills_sets:[
+                {
+                skills1:'',
+                skills2:'',
+                skills3:'',
+                skills4:''
                 },
-                salary_offered:{
-                    minimum:'',
-                    maximum:''
-                }
-                }
-                )
+            ],
+            locations:'',
+            experience:{
+                minimum:'',
+                maximum:''
+            },
+            salary_offered:{
+                minimum:'',
+                maximum:''
+            }
+            })
         }
     },[jobContext , current]);
-
     const [isPreviewShown, setPreviewShown] = useState(false);
     const [job , SetJob] = useState({
         
@@ -64,27 +64,24 @@ const PostJobForm = props =>{
                 minimum:'',
                 maximum:''
             }
+        })
 
-            
-    })
+
     
-    const onChange = e =>
-    SetJob({ ...job, [e.target.name]: e.target.value });
     
+    const onChange = e => SetJob({ ...job, [e.target.name]: e.target.value });
+
     const handlePreview=()=>{
         setPreviewShown(true); // Here we change state
     }
     
     const onSubmit = e =>{
         e.preventDefault();
-
         if(current === null){
             addJob(job);
-            props.history.push('/job-posting-successful')
-
-        }else {
-
         }
+        props.history.push('/job-posting-successful')
+
     }
     return(
     <div style={{backgroundColor: 'rgb(246,246,246)'}}>
@@ -101,8 +98,8 @@ const PostJobForm = props =>{
                             <label>Job Title</label>
                         </div>
                         <div className= "col-lg-10">
-                            <input className="form-input" type="text" name = 'title' value={job.title} onChange={onChange}  
-                             placeholder="title" required></input>
+                            <input className="form-input" type="text" name ='title' value={job.title} onChange = {onChange} 
+                             placeholder = 'Possition' required />
                         </div>
                     </div>
                     <div className="row job-form-fields"   >
@@ -159,8 +156,7 @@ const PostJobForm = props =>{
                             <label>Job Description</label>
                         </div>
                         <div className= "col-lg-10">
-                            <textarea className="form-input form-input-textarea" type="text" name = 'description' value={job.description} required
-                            onChange = {onChange}
+                            <textarea className="form-input form-input-textarea" type="text" name ='description' value={job.description} onChange= {onChange} 
                              placeholder="Job Description"></textarea>
                         </div>
                     </div>
@@ -197,7 +193,7 @@ const PostJobForm = props =>{
                             <label>Job Type</label>
                         </div>
                         <div className= "col-lg-10">
-                            <input className="form-input" type="text" name = 'job_type' required value ={job.job_type} onChange = {onChange}
+                            <input className="form-input" type="text" name = 'job_type' required value={job.job_type} onChange = {onChange}
                             placeholder="Enter Job Type"></input>
                         </div>
                     </div>

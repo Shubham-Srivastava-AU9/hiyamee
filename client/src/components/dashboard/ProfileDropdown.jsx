@@ -10,11 +10,7 @@ const ProfileDropdown = () => {
   const { user, logout } = authContext;
   // const [showUser,setUser] = useState([])
 
-//   useEffect(()=>{
-//     setUser(user.user)
-//     // console.log(jobs.jobs,'vishnu')
-
-//  },[])
+ 
 
 
   
@@ -32,8 +28,8 @@ const ProfileDropdown = () => {
             </div>
             <div className='col-sm-9 align-self-center'>
               <div className='profile_card_content'>
-                <h3>{user.name}</h3>
-                <p>{user.email}</p>
+                <h3>{user.name}</h3> 
+                 <p>{user.email}</p>
                 
                 
               </div>

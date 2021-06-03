@@ -6,6 +6,7 @@ import jobsReducer from './jobsReducer';
 import {
   GET_JOBS,
   ADD_JOB,
+  GET_JOB,
   DELETE_JOB,
   SET_CURRENT,
   CLEAR_CURRENT,
@@ -19,35 +20,22 @@ import {
 
 const JobState = props => {
     const initialState = {
-      jobs : [],
+      jobs :[],
+      // job:[],
       current: null,
       filtered: null,
       error: null
-      // jobs :[{
-      //   id : 1,
-      //   title : "Web Devoloper",
-      //   description : "about my self",
-      //   job_type :'Full-time',
-      //   Skills_sets : [{
-      //   name:"React Js",
-      //   description:"frontend frame-work"
-      //   }],
-      //   experience:{
-      //     minimum:5,
-      //     maximum:6
-      // },
-      // status:"Active"
-      // }],
+      
       
 
     };
 
 
-    const [state, dispatch] = useReducer(jobsReducer, initialState);
+const [state, dispatch] = useReducer(jobsReducer, initialState);
 
 
-     // Get Contact
-  const getJob = async () => {
+     // Get Jobs
+  const getJob = async() => {
     try {
       const res = await axios.get('/api/jobs');
 
@@ -66,13 +54,10 @@ const JobState = props => {
 
     // Add Job
     const addJob = async job => {
-      // job.id = uuidv4()//
-      // dispatch({type: ADD_JOB,payload: job})
-
-        const config = {
-          headers: {
-            'Content-Type': 'application/json'
-          }
+      const config = {
+        headers: {
+          'Content-Type': 'application/json'
+        }
         };
     
         try {
@@ -89,6 +74,10 @@ const JobState = props => {
           });
         }
       };
+
+      //get specific job
+    
+
       //Set Current Job
       const setCurrent = job =>{
         dispatch({type : SET_CURRENT , payload:job})
@@ -104,11 +93,13 @@ const JobState = props => {
           value={{
             jobs: state.jobs,
             current:state.current,
+            // job:state.job,
             // error:state.error,
             addJob,
             setCurrent,
             clearCurrent,
             getJob,
+            
             
           }}
         >

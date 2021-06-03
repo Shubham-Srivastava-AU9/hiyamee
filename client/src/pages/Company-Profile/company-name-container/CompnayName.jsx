@@ -6,17 +6,13 @@ import AuthContext from "../../../context/auth/authContext"
 
 
 
-const CompanyName=()=> {
+const CompanyName =()=> {
   const authContext = useContext(AuthContext)
   const {user} = authContext;
   // console.log(user);
 //   const [showUser,setUser] = useState([])
 
-//   useEffect(()=>{
-//     setUser(user.user)
-//     // console.log(jobs.jobs,'vishnu')
-
-//  },[user])
+  
 
 
 

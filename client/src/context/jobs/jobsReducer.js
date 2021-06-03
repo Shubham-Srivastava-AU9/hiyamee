@@ -3,7 +3,8 @@ import {
     ADD_JOB,
     JOB_ERROR,
     SET_CURRENT,
-    CLEAR_CURRENT
+    CLEAR_CURRENT,
+    GET_JOB
     
     
   } from '../types';
@@ -13,26 +14,27 @@ import {
       case GET_JOBS:
         return {
           ...state,
-          jobs: action.payload,
+          jobs: action.payload
           
         };
       case ADD_JOB:
         return {
-          ...state,
-          jobs : [...state.jobs, action.payload]
+          ...state.jobs,
+          jobs: action.payload 
           
         };
+        
    
       case SET_CURRENT:
         return {
           ...state,
           current: action.payload
         };
-      case CLEAR_CURRENT:
-        return {
-          ...state,
-          current: null
-        };
+      // case CLEAR_CURRENT:
+      //   return {
+      //     ...state,
+      //     current: null
+      //   };
     //   case FILTER_JOBS:
     //     return {
     //       ...state,
@@ -46,11 +48,11 @@ import {
     //       ...state,
     //       filtered: null
     //     };
-      case JOB_ERROR:
-        return {
-          ...state,
-          error: action.payload
-        };
+      // case JOB_ERROR:
+      //   return {
+      //     ...state,
+      //     error: action.payload
+      //   };
         default:
           return state;
       

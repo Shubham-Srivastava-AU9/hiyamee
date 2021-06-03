@@ -16,10 +16,10 @@ import {
 
 const AuthState = props => {
   const initialState = {
+    user:[],
     token: localStorage.getItem('token'),
     isAuthenticated: null,
     loading: true,
-    user: [],
     error: null
   };
 
@@ -119,3 +119,5 @@ const AuthState = props => {
 };
 
 export default AuthState;
+
+

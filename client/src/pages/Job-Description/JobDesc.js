@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useContext , useEffect, useState} from "react";
+import JobContext from '../../context/jobs/jobsContext'
+import AuthContext from '../../context/auth/authContext';
+
 import AuthDBHeader from "../../components/dashboard/AuthDBHeader";
 import Footer from "../../components/Home/Footer";
 import Ratings from "../../components/Job-Description/rating/Ratings";
 import "./JobDesc.css";
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import ReactStars from "react-rating-stars-component";
 
 const jobDescRatings = {
@@ -23,67 +26,46 @@ const jobDescRatings = {
 };
 
 
-function JobDesc() {
+function JobDesc (){
+  const params = useParams()
+
+  const jobContext = useContext(JobContext)
+  const authContext = useContext(AuthContext);
+
+  const {jobs , getJob} = jobContext;
+  console.log(jobs);
+  const { user } = authContext;
+
+  const [showJobs,setShowJobs] = useState([])
+  const [skills,setSkills] = useState([])
+
+  // console.log(jobs,'molu');
+  useEffect(()=>{
+    getJob()
+  },[])
+
+   useEffect(() => {
+      setSkills(jobs?.jobs?.find(job=>{
+        
+       return job._id === params.id
+      }))
+      },[jobs])
+
+  
+
+
   return (
     <div className="job-desc-page" style={{backgroundColor: 'rgb(246,246,246)'}}>
         <AuthDBHeader />
             <div className="job-desc-container">
             <div className="top-container">
-        {/*<div className="top-container-row">
-            <div className="top-container-col left-col">
-              <div>
-                <h5>Advanced Software Engineer</h5>
-                <h7 className="top-container-comp-name">Honeywell</h7>
-                <div className="top-container-rating">
-                <Ratings />
-                </div>
-              </div>
-
-              <div className="top-container-btn-group">
-                 <div className="top-container-button">
-                   <Link to="/applicants" ><button className="top-container-btn">View Applicants</button></Link>
-                 </div>
-                 <div className="top-container-button">
-                   <button className="top-container-btn edit">Edit</button>
-                 </div>
-              </div>
-
-
-            <div className="top-container-col right-col">
-              <div>
-              <div>
-                <h1 className= "top-container-dropdown">
-                    <div class="top-container-dropdown">
-                        <button class="top-container-dropbtn">ACTIVE
-                        <i style={{marginLeft: '30px'}} class="fas fa-chevron-down"></i></button>
-                        <div class="top-container-dropdown-content">
-                            <a href="#">INACTIVE</a>
-                        </div>
-                    </div>
-                </h1>
-            </div>
-              </div>
-              <div className= "share">
-              <p className= "share">SHARE</p>
-                
-                <i class="fas fa-paste" style= {{color:'#656565', marginLeft: '30px', opacity: '1'}}></i>
-                <i class="fab fa-linkedin-in" style= {{color:'#656565',marginLeft: '30px',opacity: '1'}}></i>
-                <i class="fab fa-facebook-f" style= {{color:'#656565',marginLeft: '30px',opacity: '1'}}></i>
-                <i class="fab fa-instagram" style= {{color:'#656565',marginLeft: '30px',opacity: '1'}}></i>
-                <i class="fab fa-twitter" style= {{color:'#656565',marginLeft: '30px',opacity: '1'}}></i>
-            
-              </div>
-            </div>
-          </div>
-
-        </div>*/}
-
         <div className="row job-desc-top">
           <div className="col-lg-9 col-md-12 col-sm-12">
             <div className="job-desc-title">
-              <h5>Advanced Software Engineer</h5>
+              <h5>{skills?.title}</h5>
+              
               <div className="job-desc-title">
-                <p>Honeywell</p>
+                <p>{user.name}</p>
                 <form >
                     <div className="job-desc-star">
                       <ReactStars {...jobDescRatings} />
@@ -94,7 +76,7 @@ function JobDesc() {
           </div>
           <div className="col-lg-3">
             <div class="top-container-dropdown">
-                  <button class="top-container-dropbtn">ACTIVE
+                  <button class="top-container-dropbtn">{skills?.status}
                   <i style={{marginLeft: '30px'}} class="fas fa-chevron-down"></i></button>
                   <div class="top-container-dropdown-content">
                     {/*<a href="#">INACTIVE</a>*/}
@@ -107,7 +89,7 @@ function JobDesc() {
           <div className="col-lg-7">
             <div className="btn-group job-desc-button">
                 <div className="top-container-button">
-                  <Link to="/applicants"><button className="top-container-btn">View Applicants</button></Link>
+                  <Link to="/total-applicants"><button className="top-container-btn">View Applicants</button></Link>
                 </div>
                 <div className="top-container-button">
                   <button className="top-container-btn edit">Edit</button>
@@ -144,32 +126,23 @@ function JobDesc() {
     <div className="job-desc-component">
         <div>
             <h4> Job Description</h4>
-            <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+            <p>{skills?.description}</p>
         </div>
 
         <div className="job-desc-row">
           <div className="job-desc-col">
             <h5>JOB FUNCTIONS</h5>
-            <p>Software Engineer, Planning, Solutions</p>
+            <h6>Full Stack Developer</h6>
           </div>
 
           <div className="job-desc-col">
             <h5>EXPERIENCE NEEDED</h5>
-            <p>5-7 Years</p>
+            <h6> {`${skills?.experience?.minimum} - ${skills?.experience?.maximum}`} Years</h6>
           </div>
 
           <div className="job-desc-col">
             <h5>SALARY</h5>
-            <p>6-7 Lakhs Per Annum (Negotiable)</p>
+            <h6>{skills?.salary_offered?.minimum} - {skills?.salary_offered?.maximum} /-</h6>
           </div>
         </div>
 

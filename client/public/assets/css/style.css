@@ -1785,6 +1785,11 @@ main.auth {
   background: linear-gradient(90deg, #e5e5e5 60%, white 60%);
   min-height: 100vh;
 }
+@media screen and (max-width: 556px) {
+  main.auth {
+    background: linear-gradient(90deg,#ffffff 60%, white 60%);
+  }
+}
 
 main.auth .trending_platforms_container {
   padding: 25px 0;

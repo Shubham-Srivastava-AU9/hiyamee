@@ -55,19 +55,19 @@ const  MainBuilder =()=>{
         <Route exact path={`/company-profile`} component={CompanyProfile} />
         <Route exact path={`/posted-jobs`} component={PostedJobs} />
         <Route exact path={`/no-access-to-community`} component={NoAccessTalent} />
-        <Route exact path={`/applicants`} component={Applicants} />
+        {/* <Route exact path={`/applicants`} component={Applicants} /> */}
         <Route exact path={`/applicant-profile`} component={ApplicantProfilePage} />
-        <Route exact path={`/job-description`} component={JobDesc} />
+        <Route exact path={`/job-description/:id`} component={JobDesc} />
         <Route exact path={`/notifications`} component={Notifications} />
         <Route exact path={`/settings`} component={Settings} />
         <Route exact path={`/post-job`} component={PostJobForm} />
 
         <Route exact path={`/job-posting-successful`} component={JobPostingSuccess} />
-        {/*<Route exact path={`/about-company`} component={AboutCompany} />*/}
+        <Route exact path={`/about-company`} component={AboutCompany} />
         <Route exact path={`/browse-candidates`} component={BrowseForm} />
         
         <Route exact path={`/total-applicants`} component={TotalApplicants} />
-        <Route exact path={`/about-company`} component={AboutCompany} />
+        {/* <Route exact path={`/about-company`} component={AboutCompany} /> */}
         
         <Route exact path='/404' component={NotFound} />
 

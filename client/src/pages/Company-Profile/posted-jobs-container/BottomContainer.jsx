@@ -27,7 +27,7 @@ const BottomContainer = ()=> {
     return(
         <>
         <div class="bottom-container">
-        <div>
+            <div>
             <h4 class="bottom-container-heading"> Posted Jobs</h4>
         </div>
         
@@ -36,7 +36,7 @@ const BottomContainer = ()=> {
 
             {showJobs?.map((item)=>{
                 return (
-                <div className="bottom-container-jobcard-col">
+               <Link to ={`/job-description/${item._id}`}><div className="bottom-container-jobcard-col">
                 <div class="job-card">
                 
             <div class="job-card-row">
@@ -75,8 +75,11 @@ const BottomContainer = ()=> {
                 </div>
             </div>
             
+            
         </div>
+        
         </div>
+        </Link>
                 )
             })}
                 

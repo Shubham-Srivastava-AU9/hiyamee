@@ -37,7 +37,7 @@ import {
           token: null,
           isAuthenticated: false,
           loading: false,
-          user: null,
+          user: [],
           error: action.payload
         };
       case CLEAR_ERRORS:

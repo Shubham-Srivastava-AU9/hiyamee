@@ -11,6 +11,10 @@ const JobCardv2 = ({job}) =>{
             console.log(item,'shs')
 
             return(
+                
+                <Link to = {`/job-description/${item._id}`}>
+                
+                
                 <div class="job-card">
                 <div class="job-card-row">
                 <div class="job-card-col job-card-left">
@@ -47,7 +51,7 @@ const JobCardv2 = ({job}) =>{
                     </div>
                 </div>
             </div>
-        </div>
+        </div></Link>
             )
         })}
         

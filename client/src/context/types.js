@@ -1,11 +1,13 @@
 export const GET_JOBS = 'GET_JOBS';
+
+
 export const ADD_JOB = 'ADD_JOB';
 export const DELETE_CONTACT = 'DELETE_JOB';
 export const SET_CURRENT = 'SET_CURRENT_JOB';
 export const CLEAR_CURRENT = 'CLEAR_CURRENT';
-export const UPDATE_CONTACT = 'UPDATE_CONTACT';
-export const FILTER_CONTACTS = 'FILTER_CONTACTS';
-export const CLEAR_CONTACTS = 'CLEAR_CONTACTS';
+export const UPDATE_CONTACT = 'UPDATE_JOB';
+export const FILTER_CONTACTS = 'FILTER_JOBS';
+export const CLEAR_CONTACTS = 'CLEAR_JOBS';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
 export const JOB_ERROR = 'JOB_ERROR';
 export const SET_ALERT = 'SET_ALERT';
